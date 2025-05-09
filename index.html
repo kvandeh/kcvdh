@@ -31,12 +31,27 @@ All rights reserved.
 <body>
     <section id="about">
         <div>
-            <img src="img/logo.png" alt="Logo" height="200rem">
+            <img src="img/logo.png" alt="Logo">
         </div>
         <div>
             <b>Hey I'm</b>
             <h1>Kieran</h1>
             <span>Software Architect</span>
+        </div>
+    </section>
+
+    <section>
+        <h1>About Me</h1>
+        <span>
+            I am 18 year old software architect. I've worked in every environment from a start-up to a full production product. 
+            I'm experienced across the board in the software development life cycle, from requirements gathering to deployment and maintenance.
+        </span>
+        <span class="hideonmobile">
+            I have a strong understanding of software architecture and design patterns, and I am always looking for ways to improve my skills and knowledge.
+        </span>
+        <div class="row" style="margin-top: 5px;">
+            <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')"><button><img src="img/copy.png"> Copy Discord</button></a>
+            <a href="mailto:me@kcvdh.com"><button><img src="img/mail.png"> Email</button></a>
         </div>
     </section>
 
@@ -48,9 +63,12 @@ All rights reserved.
         <div class="listitem">
             <a href="https://peekseek.net" target="_blank"> <h2>PeekSeek.net</h2> </a>
             <i>Online queue system for Unturned</i>
-            <span>
+            <span class="hideonmobile">
                 PeekSeek demonstrates my expertise in cloud infrastructure, the website itself is hosted on Sevalla which automatically scales based on demand.
                 The database is hosted seperately, to let the website instances have the same data.
+            </span>
+
+            <span>
                 The Unturned servers connect seamlessly using our API, making everything scalable and efficient. 
                 PeekSeek works closely with the developers of Unturned, we for example now how the largest bi-yearly tournaments in the Unturned community.
             </span>
@@ -99,7 +117,7 @@ All rights reserved.
         <div class="listitem">
             <h2>ASML</h2>
             <i>2025 - Present</i>
-            <span>
+            <span class="hideonmobile">
                 Currently working at ASML as a software architect. I am responsible for designing and implementing software solutions mostly to boos productivity.
                 Mostly work in Python but also use JavaScript and SQL.
             </span>
@@ -108,7 +126,7 @@ All rights reserved.
         <div class="listitem">
             <h2>Roompot</h2>
             <i>2024 - 2024</i>
-            <span>
+            <span class="hideonmobile">
                 Roompot is a holiday park company in the Netherlands. I worked as a lifegaurd and was responsible for the safety of the guests.
                 I also worked as a receptionist, where I was responsible for checking in and out guests. This experience taught me a lot about customer service and how to handle difficult situations.
             </span>
@@ -119,14 +137,14 @@ All rights reserved.
         </div>
     </section>
 
-    <section id="contact">
+    <section class="contact">
         <h1>Contact</h1>
         <span>
             Many ways to contact me, I prefer being contacted on Discord <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')">@wherehome</a>, 
             however you can also email me at <a href="mailto:me@kcvdh.com">me@kcvdh.com</a>.
         </span>
         <br>
-        <div>
+        <div class="row">
             <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')"><button><img src="img/copy.png"> Copy Discord</button></a>
             <a href="mailto:me@kcvdh.com"><button><img src="img/mail.png"> Email</button></a>
         </div>
@@ -141,32 +159,36 @@ All rights reserved.
         <div class="listitem">
             <h2>HBO Verpleegkunde</h2>
             <i>2025 - Present</i>
-            <span>
+            <span class="hideonmobile">
                 Dutch medical school, currently studying to become a nurse.
             </span>
         </div>
 
         <div class="listitem">
-            <h2>Camebridge</h2>
-            <i>2025 - Present</i>
-            <span>
-                Dutch medical school, currently studying to become a nurse.
+            <h2>HAVO NT & NG</h2>
+            <i>2019 - 2025</i>
+            <span class="hideonmobile">
+                HAVO is a Dutch secondary education diploma that is equivalent to the high school diploma in the US.
+                NT (Natuur en Techniek) and NG (Natuur en Gezondheid) are two of the five profiles that you can choose from in HAVO.
+                NT focuses on science and technology, while NG focuses on health and biology.
             </span>
         </div>
 
         <div class="listitem">
             <h2>Cambridge IGCSE</h2>
             <i>2019 - 2025</i>
-            <span>
+            <span class="hideonmobile">
                 Certified by Cambridge, IGCSE is an internationally recognized qualification.
                 IGCSE is a globally recognized qualification for students aged 14-16, and is equivalent to the GCSE in the UK.
             </span>
         </div>
 
+        
+
         <div class="listitem">
             <h2>Sociale Hygiene</h2>
             <i>2024 - 2024</i>
-            <span>
+            <span class="hideonmobile">
                 Social Hygiene is a Dutch qualification that is required for anyone who works in the hospitality industry.
                 It covers topics such as alcohol and drug use, health and safety, and customer service. It thoughts me a lot about legal concepts.
             </span>
@@ -175,7 +197,7 @@ All rights reserved.
         <div class="listitem">
             <h2>EHBO & BHV</h2>
             <i>2024 - 2024</i>
-            <span>
+            <span class="hideonmobile">
                 EHBO (Eerste Hulp Bij Ongelukken) is a Dutch qualification that covers first aid and emergency response.
                 BHV (Bedrijfshulpverlening) is a Dutch qualification that covers emergency response in the workplace.
             </span>
@@ -184,15 +206,40 @@ All rights reserved.
         <div class="listitem">
             <h2>Cambridge Checkpoints</h2>
             <i>2019 - 2023</i>
-            <span>
+            <span class="hideonmobile">
                 Cambridge Checkpoints is a series of assessments that are designed to help students prepare for the IGCSE exams.
                 The assessments are based on the same syllabus as the IGCSE exams, and are designed to help students identify their strengths and weaknesses.
             </span>
         </div>
     </section>
 
-    <content>
-        <p>&copy; 2025 kcvdh - All rights reserved</p>
-    </content>
+    <section class="contact">
+        <h1>Let's talk</h1>
+        <span>
+            I am always looking for new opportunities and challenges. If you are interested in working with me, please feel free to reach out.
+            I am open to freelance work, internships, and full-time positions. I am also open to collaborating on projects and sharing ideas.
+            Many ways to contact me, I prefer being contacted on Discord <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')">@wherehome</a>, 
+            however you can also email me at <a href="mailto:me@kcvdh.com">me@kcvdh.com</a>.
+        </span>
+        <br>
+        <div class="row">
+            <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')"><button><img src="img/copy.png"> Copy Discord</button></a>
+            <a href="mailto:me@kcvdh.com"><button><img src="img/mail.png"> Email</button></a>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <i>
+            This website is designed and developed by Kieran van der Heijde. All rights reserved.
+            The content of this website is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+            You are free to share and adapt the content, but you must give appropriate credit, provide a link to the license, and indicate if changes were made.
+            You may not use the material for commercial purposes.
+        </i>
+        <br>
+        <span>Copyright © 2025 Kieran van der Heijde</span>
+    </section>
+
+    <section></section>
 </body>
 </html>

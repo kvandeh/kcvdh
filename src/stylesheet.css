@@ -15,15 +15,15 @@ body {
     padding: 100px 0;
     display: flex;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
     gap: 50px;
+    padding-bottom: 100px;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    width: min(1200px, 90vw);
+    width: min(1000px, 90vw);
     position: relative;
     gap: 10px;
 }
@@ -52,6 +52,10 @@ h1 {
 
 #about span {
     font-size: 2rem;
+}
+
+#about img {
+    height: 14rem;
 }
 
 .line {
@@ -117,13 +121,44 @@ footer {
     margin: 100px;
 }
 
-#contact a {
+.contact a {
     cursor: pointer;
     color: #87c5ff;
 }
 
-#contact div {
+.row {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-top: 5px;;
+}
+
+@media (max-width: 768px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    #about b {
+        font-size: 1rem;
+    }
+    
+    #about h1 {
+        font-size: 2.5rem;
+    }
+
+    #about {
+        margin-left: -2rem;
+    }
+    
+    #about span {
+        font-size: 1rem;
+    }
+
+    #about img {
+        height: 7rem;
+    }
+}
+
+.footer {
+    margin-top: 200px;
 }
