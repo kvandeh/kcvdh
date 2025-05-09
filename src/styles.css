@@ -27,6 +27,7 @@ section {
     display: flex;
     flex-direction: column;
     width: min(1200px, 90vw);
+    position: relative;
 }
 
 #about b {
@@ -47,7 +48,13 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
+}
+
+#projects h1 {
+    font-size: 50px;
+    color: #87c5ff;
+    margin-bottom: -10px;
+    margin-left: -5px;
 }
 
 #projects button {
@@ -76,18 +83,15 @@ section {
     margin-left: 15px;
 }
 
-#projects .line {
+.line {
     width: 1px;
-    height: calc(100% - 50px);
-    background-color: #235f97;
+    height: calc(100% - 70px);
+    background-color: #87c5ff;
 
-    top: 50px;
+    top: 70px;
     left: 0;
 
     position: absolute;
-
-    
-    
 }
 
 #projects .project h2 {
