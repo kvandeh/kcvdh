@@ -11,8 +11,7 @@
 
 body {
     background-color: #0a0a0d;
-    overflow: hidden;
-    width: 100vw;
+    width: 100%;
     padding: 100px 0;
 
     display: flex;
@@ -28,6 +27,19 @@ section {
     flex-direction: column;
     width: min(1200px, 90vw);
     position: relative;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: -5px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -5rem;
 }
 
 #about b {
@@ -44,20 +56,29 @@ section {
     font-size: 2rem;
 }
 
-#projects {
+.line {
+    width: 1px;
+    height: calc(100% - 70px);
+    background-color: #87c5ff;
+
+    top: 70px;
+    left: 0;
+
+    position: absolute;
+}
+
+.list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#projects h1 {
-    font-size: 50px;
+.list h1 {
     color: #87c5ff;
     margin-bottom: -10px;
-    margin-left: -5px;
 }
 
-#projects button {
+button {
     background-color: #235f97;
     padding: 8px 15px;
     border-radius: 8px;
@@ -72,35 +93,43 @@ section {
     font-size: 16px;
 }
 
-#projects button img {
+button img {
     height: 14px;
 }
 
-#projects .project {
+.list .listitem {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 15px;
 }
 
-.line {
-    width: 1px;
-    height: calc(100% - 70px);
-    background-color: #87c5ff;
-
-    top: 70px;
-    left: 0;
-
-    position: absolute;
-}
-
-#projects .project h2 {
+.list .listitem h2 {
     font-size: 30px;
     margin-bottom: -10px;
 }
 
-#projects .project span {
+.list .listitem span {
     font-size: 16px;
     margin-bottom: 10px;
     margin-top: 5px;
+}
+
+i {
+    color: #fff9;
+}
+
+footer {
+    margin: 100px;
+}
+
+#contact a {
+    cursor: pointer;
+    color:#87c5ff
+}
+
+#contact div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

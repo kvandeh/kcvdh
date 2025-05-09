@@ -20,24 +20,29 @@ All rights reserved.
 
     <title>kcvdh</title>
 
-    <!-- <link rel="icon" href="{{config.url()}}/public/img/logo-dark.ico/">
-    <link rel="icon" href="{{config.url()}}/public/img/logo.ico/" media="(prefers-color-scheme:dark)"> -->
+    <link rel="icon" href="img/dark.ico/">
+    <link rel="icon" href="img/light.ico/" media="(prefers-color-scheme:dark)">
 
     <link rel="stylesheet" href="src/styles.css" />    
 </head>
 <body>
     <section id="about">
-        <b>Hey I'm</b>
-        <h1>Kieran</h1>
-        <span>Software Architect</span>
+        <div>
+            <img src="img/logo.png" alt="Logo" height="200rem">
+        </div>
+        <div>
+            <b>Hey I'm</b>
+            <h1>Kieran</h1>
+            <span>Software Architect</span>
+        </div>
     </section>
 
-    <section id="projects">
+    <section class="list">
         <h1>Projects</h1>
 
         <div class="line"></div>
 
-        <div class="project">
+        <div class="listitem">
             <a href="https://peekseek.net" target="_blank"> <h2>PeekSeek.net</h2> </a>
             <i>Online queue system for Unturned</i>
             <span>
@@ -46,9 +51,9 @@ All rights reserved.
                 The Unturned servers connect seamlessly using our API, making everything scalable and efficient. 
                 PeekSeek works closely with the developers of Unturned, we for example now how the largest bi-yearly tournaments in the Unturned community.
             </span>
-            <a href="https://peekseek.net" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+            <a href="https://peekseek.net" target="_blank"> <button> <img src="img/link.png"> Visit</button> </a>
         </div>
-        <div class="project">
+        <div class="listitem">
             <a href="https://pypi.org/project/data3/" target="_blank"> <h2>Data3</h2> </a>
             <i>SQLite3 wrapper for Python</i>
             <span>
@@ -56,26 +61,135 @@ All rights reserved.
                 Making everything iterable and enabling you to use the same syntax as you would with a normal list.
                 Data3 is designed to be easy to use and understand, making it a great choice for developers of all skill levels.
             </span>
-            <a href="https://pypi.org/project/data3/" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+            <a href="https://pypi.org/project/data3/" target="_blank"> <button> <img src="img/link.png"> Visit</button> </a>
         </div>
-        <div class="project">
+        <div class="listitem">
             <a href="https://defensiecommunity.nl/" target="_blank"> <h2>DefensieCommunity.nl</h2> </a>
             <i>Website for the Dutch military community</i>
             <span>
                 DefensieCommunity is originally a Discord server for the Dutch military community. It is a platform for active duty, reserve and also applicants to connect.
                 A great place to meet new people and learn more about the military. I have been working on small tasks to do with this website, such as a new header.
             </span>
-            <a href="https://defensiecommunity.nl/" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+            <a href="https://defensiecommunity.nl/" target="_blank"> <button> <img src="img/link.png"> Visit</button> </a>
+        </div>
+
+        <div class="listitem">
+            <i>* I've had many other less notable projects</i>
+        </div>
+    </section>
+
+    <section>
+        <h1>Discord Community</h1>
+        <span>
+            There's an unofficial Discord community which empowers developers using my brand. I heavily encourage you to join if you're interested in development or just want to chat with like-minded people.
+            Please note that this is not an official kcvdh product or service, but rather a community liscensed under my personal branding.
+        </span>
+        <br>
+        <a href="https://discord.gg/RdMhpPB5Rn" target="_blank"> <button> <img src="img/discord.png"> Join</button> </a>
+    </section>
+
+    <section class="list">
+        <h1>Employers</h1>
+
+        <div class="line"></div>
+
+        <div class="listitem">
+            <h2>ASML</h2>
+            <i>2025 - Present</i>
+            <span>
+                Currently working at ASML as a software architect. I am responsible for designing and implementing software solutions mostly to boos productivity.
+                Mostly work in Python but also use JavaScript and SQL.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>Roompot</h2>
+            <i>2024 - 2024</i>
+            <span>
+                Roompot is a holiday park company in the Netherlands. I worked as a lifegaurd and was responsible for the safety of the guests.
+                I also worked as a receptionist, where I was responsible for checking in and out guests. This experience taught me a lot about customer service and how to handle difficult situations.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <i>* I've had 3 other less notable job</i>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email at <a href="mailto:me@kcvdh.com">me@kcvdh.com</a>.</p>
+        <h1>Contact</h1>
+        <span>
+            Many ways to contact me, I prefer being contacted on Discord <a onclick="navigator.clipboard.writeText('@wherehome');alert('Copied to clipboard.')">@wherehome</a>, 
+            however you can also email me at <a href="mailto:me@kcvdh.com">me@kcvdh.com</a>.
+        </span>
+        <br>
+        <div>
+            <a href=""><button><img src="img/copy.png"> Copy Discord</button></a>
+            <a href=""><button><img src="img/mail.png"> Email</button></a>
+        </div>
+        
     </section>
 
-    <footer>
-        <p>&copy; 2025 kcvdh - All rights reserved.</p>
-    </footer>
+    <section class="list">
+        <h1>Education</h1>
+
+        <div class="line"></div>
+
+        <div class="listitem">
+            <h2>HBO Verpleegkunde</h2>
+            <i>2025 - Present</i>
+            <span>
+                Dutch medical school, currently studying to become a nurse.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>Camebridge</h2>
+            <i>2025 - Present</i>
+            <span>
+                Dutch medical school, currently studying to become a nurse.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>Cambridge IGCSE</h2>
+            <i>2019 - 2025</i>
+            <span>
+                Certified by Cambridge, IGCSE is an internationally recognized qualification.
+                IGCSE is a globally recognized qualification for students aged 14-16, and is equivalent to the GCSE in the UK.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>Sociale Hygiene</h2>
+            <i>2024 - 2024</i>
+            <span>
+                Social Hygiene is a Dutch qualification that is required for anyone who works in the hospitality industry.
+                It covers topics such as alcohol and drug use, health and safety, and customer service. It thoughts me a lot about legal concepts.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>EHBO & BHV</h2>
+            <i>2024 - 2024</i>
+            <span>
+                EHBO (Eerste Hulp Bij Ongelukken) is a Dutch qualification that covers first aid and emergency response.
+                BHV (Bedrijfshulpverlening) is a Dutch qualification that covers emergency response in the workplace.
+            </span>
+        </div>
+
+        <div class="listitem">
+            <h2>Cambridge Checkpoints</h2>
+            <i>2019 - 2023</i>
+            <span>
+                Cambridge Checkpoints is a series of assessments that are designed to help students prepare for the IGCSE exams.
+                The assessments are based on the same syllabus as the IGCSE exams, and are designed to help students identify their strengths and weaknesses.
+            </span>
+        </div>
+    </section>
+
+    <content>
+        <p>&copy; 2025 kcvdh - All rights reserved</p>
+    </content>
 </body>
 </html>
