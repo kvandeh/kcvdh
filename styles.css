@@ -1,4 +1,102 @@
 * {
-    background-color: black;
     color: white;
+    font-family: 'verdana', monospace;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0a0a0d;
+    overflow: hidden;
+    width: 100vw;
+    padding: 100px 0;
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: min(1200px, 90vw);
+}
+
+#about b {
+    font-size: 2rem;
+}
+
+#about h1 {
+    font-size: 5rem;
+    color: #87c5ff;
+    margin-left: -5px;
+}
+
+#about span {
+    font-size: 2rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+#projects button {
+    background-color: #235f97;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+
+    font-size: 16px;
+}
+
+#projects button img {
+    height: 14px;
+}
+
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+#projects .line {
+    width: 1px;
+    height: calc(100% - 50px);
+    background-color: #235f97;
+
+    top: 50px;
+    left: 0;
+
+    position: absolute;
+
+    
+    
+}
+
+#projects .project h2 {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+#projects .project span {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }

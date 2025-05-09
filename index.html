@@ -1,41 +1,74 @@
+<!-- 
+Copyright (c) 2023 Kieran van der Heijde
+All rights reserved.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of KC">
-    <title>KC's Portfolio - KCVdH</title>
+    <meta name="description" content="A personal portfolio showcasing KC's projects and contact information.">
+    <meta name="author" content="kc">
+    <meta name="keywords" content="portfolio, web development, KC, projects, contact, design.">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>kcvdh</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Hello! I'm KC, a passionate developer with a love for creating innovative solutions.</p>
-        </section>
+    <section id="about">
+        <b>Hey I'm</b>
+        <h1>Kieran</h1>
+        <span>Software Architect</span>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of the first project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of the second project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-        </section>
+    <section id="projects">
+        <h1>Projects</h1>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at <a href="mailto:kc@example.com">kc@example.com</a>.</p>
-        </section>
-    </main>
+        <div class="line"></div>
+
+        <div class="project">
+            <a href="https://peekseek.net" target="_blank"> <h2>PeekSeek.net</h2> </a>
+            <i>Online queue system for Unturned</i>
+            <span>
+                PeekSeek demonstrates my expertise in cloud infrastructure, the website itself is hosted on Sevalla which automatically scales based on demand.
+                The database is hosted seperately, to let the website instances have the same data.
+                The Unturned servers connect seamlessly using our API, making everything scalable and efficient. 
+                PeekSeek works closely with the developers of Unturned, we for example now how the largest bi-yearly tournaments in the Unturned community.
+            </span>
+            <a href="https://peekseek.net" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+        </div>
+        <div class="project">
+            <a href="https://pypi.org/project/data3/" target="_blank"> <h2>Data3</h2> </a>
+            <i>SQLite3 wrapper for Python</i>
+            <span>
+                With a focus on being object oriented, Data3 is a wrapper for SQLite3 that simplifies database interactions.
+                Making everything iterable and enabling you to use the same syntax as you would with a normal list.
+                Data3 is designed to be easy to use and understand, making it a great choice for developers of all skill levels.
+            </span>
+            <a href="https://pypi.org/project/data3/" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+        </div>
+        <div class="project">
+            <a href="https://defensiecommunity.nl/" target="_blank"> <h2>DefensieCommunity.nl</h2> </a>
+            <i>Website for the Dutch military community</i>
+            <span>
+                DefensieCommunity is originally a Discord server for the Dutch military community. It is a platform for active duty, reserve and also applicants to connect.
+                A great place to meet new people and learn more about the military. I have been working on small tasks to do with this website, such as a new header.
+            </span>
+            <a href="https://defensiecommunity.nl/" target="_blank"> <button> <img src="link.png"> Visit</button> </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:me@kcvdh.com">me@kcvdh.com</a>.</p>
+    </section>
 
     <footer>
-        <p>&copy; 2023 KC. All rights reserved.</p>
+        <p>&copy; 2023 kcvdh - All rights reserved.</p>
     </footer>
 </body>
 </html>
